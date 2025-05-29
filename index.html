@@ -1,218 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Vivek - Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f6f6f6;
-      margin: 0;
-      padding: 0;
-      color: #24292f;
-    }
-    .container {
-      max-width: 1050px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 3px 16px #0002;
-      padding: 40px 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      border-bottom: 1px solid #e1e4e8;
-      padding-bottom: 18px;
-    }
-    .avatar {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #d1d5da;
-    }
-    .profile-info {
-      flex: 1;
-    }
-    .name {
-      font-size: 2.2rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-    .role {
-      font-size: 1.1rem;
-      color: #586069;
-      margin-top: 5px;
-    }
-    .contacts a {
-      color: #0366d6;
-      text-decoration: none;
-      margin-right: 12px;
-      font-size: 1.05rem;
-      transition: color 0.2s;
-    }
-    .contacts a:hover {
-      color: #0056b3;
-    }
-    .description {
-      margin-top: 10px;
-      color: #444;
-      font-size: 1rem;
-    }
-    .main-content {
-      display: flex;
-      gap: 36px;
-      margin-top: 10px;
-    }
-    .left-col, .right-col {
-      flex: 1;
-    }
-    .section-title {
-      font-weight: 600;
-      font-size: 1.18rem;
-      color: #24292f;
-      margin-bottom: 10px;
-      letter-spacing: 0.2px;
-    }
-    .work-list, .edu-list, .skills-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .work-item {
-      margin-bottom: 25px;
-    }
-    .work-role {
-      font-weight: 600;
-    }
-    .work-org {
-      color: #0366d6;
-      text-decoration: none;
-      font-weight: 500;
-      margin-left: 4px;
-    }
-    .work-time {
-      color: #6a737d;
-      font-size: 0.98rem;
-    }
-    .work-details {
-      margin: 6px 0 0 0;
-      padding-left: 16px;
-    }
-    .edu-item {
-      margin-bottom: 16px;
-    }
-    .edu-title {
-      font-weight: 600;
-    }
-    .edu-meta, .edu-honors {
-      color: #6a737d;
-      font-size: 0.97rem;
-    }
-    .skills-list li {
-      margin-bottom: 7px;
-      display: flex;
-      align-items: center;
-    }
-    .skill-name {
-      width: 180px;
-    }
-    .skill-level {
-      font-size: 0.93rem;
-      color: #5d697a;
-      padding: 2px 10px;
-      background: #e8eaf0;
-      border-radius: 5px;
-      margin-left: 10px;
-      display: inline-block;
-    }
-    @media (max-width: 900px) {
-      .main-content {
-        flex-direction: column;
-        gap: 0;
-      }
-      .left-col, .right-col {
-        width: 100%;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style-test.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>Vivek's Portfolio</title>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="https://media.licdn.com/dms/image/v2/D5603AQEZiQj9Ry-k9g/profile-displayphoto-shrink_400_400/B56ZSFDgLGHQAg-/0/1737399080055?e=1753920000&v=beta&t=qiBA5tr7tSq0N73EYVrPBSJTNY_TM3JKwx4HJOdwDr0" alt="Profile" class="avatar">
-      <div class="profile-info">
-        <div class="name">Vivek Prakash Tripathi</div>
-        <div class="role">Data Scientist</div>
-        <div class="contacts">
-          <a href="mailto:tvivek966@gmail.com">tvivek966@gmail.com</a>
-          <a href="#">Chennai, IN</a> |
-          <a href="#">YouTube</a>
-          <a href="#">Instagram</a>
-          <a href="#">Github</a>
-        </div>
-        <div class="description">
-          Learning and growing the field of computer science and data analytics.
-        </div>
-      </div>
-    </div>
-    <div class="main-content">
-      <div class="left-col">
-        <div class="section-title">WORK EXPERIENCE</div>
-        <ul class="work-list">
-          <li class="work-item">
-            <div>
-              <span class="work-role">Data Science Intern</span> at 
-              <a href="#" class="work-org">Insight Fusion Analytics</a>
-              <span class="work-time">Feb 2025 – Present</span>
-            </div>
-            <ul class="work-details">
-              <li>Created and maintained back-end API services using Flask.</li>
-              <li>Created system admin scripts using Python to automate deployment of mission-critical data.</li>
-              <li>Migrated in-house data pipelines to a cloud-based solution using AWS.</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="right-col">
-        <div class="section-title">EDUCATION</div>
-        <ul class="edu-list">
-          <li class="edu-item">
-            <div class="edu-title">Vellore Institute of Technology</div>
-            <div class="edu-meta">Chennai, TN, India</div>
-            <div>Bachelor of Technology in Computer Science</div>
+    
+    <div id="preloader"></div>
 
-          </li>
-        </ul>
-        <div class="section-title">SKILLS</div>
-        <ul class="skills-list">
-          <li>
-            <span class="skill-name">Python, Flask, Django</span>
-            <span class="skill-level">Expert</span>
-          </li>
-          <li>
-            <span class="skill-name">System Admin, Linux</span>
-            <span class="skill-level">Advanced</span>
-          </li>
-          <li>
-            <span class="skill-name">JavaScript, HTML, CSS</span>
-            <span class="skill-level">Comfortable</span>
-          </li>
-        </ul>
-        <div class="section-title">INTERESTS</div>
-        <div>Woodworking, Running, Reading</div>
-      </div>
-    </div>
-  </div>
-  <script>
-    // Simple JS for dynamic tweaks, e.g., you could auto-update years or add interactive features here.
-    // For now, keeping it minimal and fast-loading.
-  </script>
+
+    <section>
+        <div class="top-container">
+            <div class="top-header-section">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQEZiQj9Ry-k9g/profile-displayphoto-shrink_400_400/B56ZSFDgLGHQAg-/0/1737399080055?e=1753920000&v=beta&t=qiBA5tr7tSq0N73EYVrPBSJTNY_TM3JKwx4HJOdwDr0" alt="Profile" class="avatar">
+                <div class="main-profile-info">
+                    <div class="name">Vivek Prakash Tripathi</div>
+                    <div class="sub-name">
+                        <div class="role">Computer Science Student</div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="loc">Chennai</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-header-section">
+                <div class="profile-info">
+                    <a class="header-links" href="https://github.com/vivektripathi07" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github info-icons"></i>Github</a>
+                    <a class="header-links" href="https://www.linkedin.com/in/vivek-tripathi-p07/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin info-icons"></i>LinkedIn</a>
+                    <a class="header-links" href="mailto:tvivek966@gmail.com"><i class="fa-solid fa-envelope info-icons"></i>tvivek966@gmail.com</a>
+                    <a class="header-links" href="" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-pen-to-square"></i> Blogs</a> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-body">
+            <div class="main-left">
+                <div class="main">
+                    <div class="heading">Experience</div>
+                    <div class="main-type">
+                        <div class="main_type__header">
+                            <a href="#"><div style="font-size: 1.2rem; font-weight: bold;">Insight Fusion Analytics<i style="transform: scale(0.7);" class="fa-solid fa-diamond-turn-right"></i></div>Data Science Intern</a>
+                            <div>(Feb 2025 - Present)</div>
+                        </div>
+                        
+                        <div class="main-type-info">
+                            <ul>Created and optimized various trading strategies for retail traders and clinets based on personalized and entry and exit condition.</ul><br>
+                            <ul>Worked on Time Series Forecasting from retail stores for predicting sales using ARIMA. </ul>
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="heading">Projects</div>
+
+                    <div class="main-type">
+                        <div class="main_type__header">
+                            <a href="#"><div style="font-size: 1.2rem; font-weight: bold;">Project 1<i style="transform: scale(0.7);" class="fa-solid fa-diamond-turn-right"></i></div></a>
+                        </div>
+
+                        <div class="main-type-info-project">
+                            Explain the project
+                        </div>
+
+                        <div class="main_type__header">
+                            <a href="#"><div style="font-size: 1.2rem; font-weight: bold;">Project 2<i style="transform: scale(0.7);" class="fa-solid fa-diamond-turn-right"></i></div></a>
+                        </div>
+
+                        <div class="main-type-info">
+                            Explain the project
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main-right">
+                <div class="main" style="margin-bottom: 40px;">
+                    <div 
+                        style=" font-size: 1.4rem; text-transform:uppercase;"
+                    >
+                        
+                        Education
+                    </div>
+
+                    <div class="main-type">
+                        <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwKy4ozjBg9JIvS83JyS9KVcjMKy7JLCktSVXIT1MoSU3OyMvPyU-vBABQgQ_w&q=vellore+institute+of+technology&rlz=1C1VDKB_enIN1038IN1038&oq=vellore&gs_lcrp=EgZjaHJvbWUqCggCEC4YsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyCggCEC4YsQMYgAQyBwgDEAAYgAQyCggEEC4YsQMYgAQyCggFEC4YsQMYgAQyCggGEAAYsQMYgAQyBwgHEAAYgAQyCggIEAAYsQMYgAQyEAgJEC4YrwEYxwEYsQMYgATSAQgzMTg0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8" 
+                            style="font-size: 1.01rem; font-weight: bold;"
+                            target="_blank" rel="noopener noreferrer">
+                            Vellore Institute of Technology
+                        </a>
+                        <div style="margin-top: 10px; margin-bottom: 20px;">
+                            <ul>Sept 2022 - Jul 2026</ul>
+                            <ul>CGPA - 8.11</ul>
+                        </div>
+
+                        <a href="https://www.google.com/search?q=dps+ranipur&sca_esv=b0ca21e5797e63e2&rlz=1C1VDKB_enIN1038IN1038&sxsrf=AE3TifMx6CfHfiRiWKXvWSYboAhbxMcu0A%3A1748515719897&ei=hzs4aLHDNoaQnesP-um3uQo&gs_ssp=eJzj4tZP1zcsyarMNUpJMmC0UjWoMLY0sDSxsEhOSzJMTEk2TrMyqDAxMDVINrdMNjFPMkgysDD14k4pKFYoSszLLCgtAgBjkRMw&oq=DPS+Rani&gs_lp=Egxnd3Mtd2l6LXNlcnAiCERQUyBSYW5pKgIIADILEC4YgAQYxwEYrwEyBRAAGIAEMgUQABiABDILEC4YgAQYxwEYrwEyCxAuGIAEGMcBGK8BMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyGhAuGIAEGMcBGK8BGJcFGNwEGN4EGOAE2AEBSKsiUABY6xVwAXgBkAEAmAHaAqABlBKqAQcwLjEuNS4zuAEDyAEA-AEBmAIKoAKvE8ICChAjGPAFGCcYyQLCAgoQIxiABBgnGIoFwgIKEC4YgAQYQxiKBcICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxiDARiKBcICDhAuGIAEGLEDGNEDGMcBwgIQEC4YgAQYQxjHARiKBRivAcICExAuGIAEGEMYxwEYigUYjgUYrwHCAgoQABiABBhDGIoFwgIOEC4YgAQYxwEYjgUYrwHCAhMQLhiABBhDGMcBGJgFGIoFGK8BwgIQEC4YgAQY0QMYQxjHARiKBcICCBAAGIAEGLEDwgIfEC4YgAQYQxjHARiKBRivARiXBRjcBBjeBBjgBNgBAcICDBAAGIAEGEMYigUYCsICEBAuGIAEGLEDGEMYgwEYigXCAhEQLhiABBixAxjHARiOBRivAcICEBAAGIAEGLEDGEMYyQMYigXCAgsQABiABBixAxjJA8ICDhAuGIAEGLEDGMcBGK8BwgIiEC4YgAQYQxjHARiKBRiOBRivARiXBRjcBBjeBBjgBNgBAcICHRAuGIAEGLEDGMcBGK8BGJcFGNwEGN4EGOAE2AEBwgINEC4YgAQYxwEYDRivAcICBxAAGIAEGA3CAhwQLhiABBjHARgNGK8BGJcFGNwEGN4EGOAE2AEBmAMAugYGCAEQARgUkgcHMS4wLjYuM6AH7a4BsgcFMi02LjO4B6ITwgcHMi0xLjcuMsgHiQE&sclient=gws-wiz-serp" 
+                            style="font-size: 1.01rem; font-weight: bold;"
+                            target="_blank" rel="noopener noreferrer">
+                            DPS, Ranipur
+                        </a>
+                        <div style="margin-top: 10px;">
+                            <ul>Class 12th - 86.4 %</ul>
+                            <ul>Class 10th - 89.2 %</ul>
+                        </div>
+
+
+                    </div>
+
+                    <div 
+                        style=" font-size: 1.4rem; text-transform:uppercase; margin-top: 40px"
+                    >
+                        Courses
+                    </div>
+
+                    <div class="main-type">
+                        <ul>Course 1</ul>
+                        <ul>Course 2</ul>
+                    </div>
+
+
+                    <div 
+                        style=" font-size: 1.4rem; text-transform:uppercase; margin-top: 40px"
+                    >
+                        Skills
+                    </div>
+
+                    <div class="main-skills">
+                        <div class="skills">Python</div>
+                        <div class="skills">Java</div>
+                        <div class="skills">R</div>
+                        <div class="skills">SQL</div>
+                        <div class="skills">C++</div>
+                        <div class="skills">Excel</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <script>
+        const PreLoader = document.getElementById('preloader');
+
+        window.onload = () => {
+
+            setTimeout(() => {
+                PreLoader.style.opacity = "0";
+
+                setTimeout(() => {
+                    PreLoader.style.display ="none";
+                }, 550);
+            }, 550);
+        }
+    </script>
 </body>
 </html>
