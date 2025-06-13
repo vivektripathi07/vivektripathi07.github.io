@@ -1,0 +1,83 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Mono:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 10 31% 9%;
+    --foreground: 214 32% 91%;
+
+    --card: 10 31% 9%;
+    --card-foreground: 214 32% 91%;
+
+    --popover: 10 31% 9%;
+    --popover-foreground: 214 32% 91%;
+
+    --primary: 168 76% 69%;
+    --primary-foreground: 10 31% 9%;
+
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 214 32% 91%;
+
+    --muted: 215 28% 17%;
+    --muted-foreground: 218 11% 65%;
+
+    --accent: 215 28% 17%;
+    --accent-foreground: 214 32% 91%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 168 76% 69%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-portfolio-dark text-portfolio-slate font-normal leading-relaxed;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    counter-reset: section;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .section-heading {
+    @apply flex items-center relative mb-10 text-2xl font-semibold text-portfolio-lightest-slate;
+  }
+
+  .section-heading::after {
+    content: '';
+    @apply block relative top-[-5px] ml-5 w-80 h-px bg-portfolio-dark-lighter;
+  }
+
+  .numbered-heading::before {
+    position: relative;
+    content: '0' counter(section) '.';
+    counter-increment: section;
+    @apply text-portfolio-green font-mono text-lg font-normal mr-4;
+  }
+}
+
+@layer components {
+  .btn-outline {
+    @apply border border-portfolio-green text-portfolio-green bg-transparent px-7 py-3 rounded font-mono text-sm hover:bg-portfolio-green-tint transition-all duration-300;
+  }
+
+  .link-underline {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-portfolio-green after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+}
