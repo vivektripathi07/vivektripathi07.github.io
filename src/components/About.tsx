@@ -22,10 +22,11 @@ const About = () => {
           <div className="md:col-span-2">
             <div className="space-y-4 text-portfolio-slate">
               <p>
-                Hello! My name is [Your Name] and I enjoy creating things that 
-                live on the internet. My interest in web development started back 
-                in 2012 when I decided to try editing custom Tumblr themes — turns 
-                out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                Hi there, I appreciate you taking out your time and looking into my portfolio.
+                My name is Vivek. I am a 4th year CS undergrad who loves to explore the depths of computer science
+                and their applications. I have done software engineering project and have worked on a lot of
+                Data Science Projects for an internship I am doing right now.
+
               </p>
               
               <p>
