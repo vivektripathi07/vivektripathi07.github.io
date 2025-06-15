@@ -12,17 +12,19 @@ const Contact = () => {
         </h2>
         
         <p className="text-lg text-portfolio-slate mb-12 leading-relaxed">
-          Although I'm not currently looking for any new opportunities, my inbox 
-          is always open. Whether you have a question or just want to say hi, I'll 
-          try my best to get back to you!
+          I am actively looking for new opportunities, so if I can add value to your team, I am always up for a discussion.
         </p>
         
         <a
           href="mailto:tvivek966@gmail.com"
           className="btn-outline text-lg px-8 py-4"
+          rel="noopener noreferrer"
         >
           Say Hello
         </a>
+        <p className="text-base text-portfolio-slate mt-6 ">
+          Have a nice day ahead!
+        </p>
       </div>
     </section>
   );
