@@ -18,7 +18,7 @@ const Contact = () => {
         </p>
         
         <a
-          href="mailto:hello@example.com"
+          href="mailto:tvivek966@gmail.com"
           className="btn-outline text-lg px-8 py-4"
         >
           Say Hello

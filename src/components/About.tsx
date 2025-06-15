@@ -1,16 +1,14 @@
 
 const About = () => {
   const skills = [
-    'JavaScript (ES6+)',
-    'TypeScript',
-    'React',
-    'Node.js',
+    'Java',
+    'C',
+    'C++',
     'Python',
-    'Next.js',
-    'Vue.js',
-    'PostgreSQL',
-    'MongoDB',
+    'Postgresql',
     'AWS',
+    'Docker',
+    'SpringBoot'
   ];
 
   return (
@@ -24,46 +22,27 @@ const About = () => {
               <p>
                 Hi there, I appreciate you taking out your time and looking into my portfolio.
                 My name is Vivek. I am a 4th year CS undergrad who loves to explore the depths of computer science
-                and their applications. I have done software engineering project and have worked on a lot of
+                and its applications. I have made software engineering projects and have worked on a lot of
                 Data Science Projects for an internship I am doing right now.
 
               </p>
               
               <p>
-                Fast-forward to today, and I've had the privilege of working at{' '}
-                <a href="#" className="text-portfolio-green link-underline">
-                  an advertising agency
+                I have worked with various technologies to understand how progamming is working under the hood, 
+                therefore I have build project in C, C++, Java, Python (have look at my {' '}
+                <a href= 'https://github.com/vivektripathi07' className="text-portfolio-green link-underline" 
+                target="_blank" rel="noopener noreferrer">
+                GitHub
                 </a>
-                ,{' '}
-                <a href="#" className="text-portfolio-green link-underline">
-                  a start-up
-                </a>
-                ,{' '}
-                <a href="#" className="text-portfolio-green link-underline">
-                  a huge corporation
-                </a>
-                , and{' '}
-                <a href="#" className="text-portfolio-green link-underline">
-                  a student-led design studio
-                </a>
-                . My main focus these days is building accessible, inclusive 
-                products and digital experiences at{' '}
-                <a href="#" className="text-portfolio-green link-underline">
-                  Upstatement
-                </a>
-                {' '}for a variety of clients.
+                ) and currently as a hobby side project I am building my own OS using C language.
+
               </p>
               
               <p>
-                I also recently{' '}
-                <a href="#" className="text-portfolio-green link-underline">
-                  launched a course
-                </a>
-                {' '}that covers everything you need to build a web app with the 
-                Spotify API using Node & React.
+                My hobbies are reading and playing music, I play guitar and piano in my free time.
               </p>
               
-              <p>Here are a few technologies I've been working with recently:</p>
+              <p>Technologies I have worked with:</p>
               
               <ul className="grid grid-cols-2 gap-0 mt-5 list-none">
                 {skills.map((skill, index) => (
@@ -80,9 +59,8 @@ const About = () => {
             <div className="relative group">
               <div className="relative overflow-hidden rounded bg-portfolio-green">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                  src="https://media.licdn.com/dms/image/v2/D5603AQEZiQj9Ry-k9g/profile-displayphoto-shrink_400_400/B56ZSFDgLGHQAg-/0/1737399080055?e=1755129600&v=beta&t=d7nUsdnuoLXzHV4nMNiwz9Ps3wYxAqSJrULU5em8nnE"
                   alt="Profile"
-                  className="w-full h-auto filter grayscale hover:grayscale-0 transition-all duration-300"
                 />
               </div>
               <div className="absolute inset-0 border-2 border-portfolio-green rounded translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>

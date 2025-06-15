@@ -21,11 +21,21 @@ const Index = () => {
         <Contact />
       </main>
       
-      <footer className="py-6 text-center">
-        <p className="text-portfolio-slate text-sm font-mono">
-          Built with React & Tailwind CSS
-        </p>
-      </footer>
+    <footer className="py-6 text-center">
+      <p className="text-portfolio-slate text-sm font-mono">
+        © {new Date().getFullYear()} Vivek Tripathi · Inspired by
+        <a
+          href="https://github.com/bchiang7"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-portfolio-green hover:underline hover:text-portfolio-lightest-slate ml-1 transition-colors"
+        >
+          Brittany Chiang
+        </a>
+      </p>
+    </footer>
+
+
     </div>
   );
 };
