@@ -17,39 +17,19 @@ const Projects = () => {
 
   const featuredProjects = [
     {
-      title: 'Spotify Profile',
+      title: 'Stock Market Screener and Backtester',
       description:
-        'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
-      tech: ['React', 'Styled Components', 'Express', 'Spotify API', 'Heroku'],
-      github: 'https://github.com',
-      youtube: 'https://youtube.com',
-      external: 'https://spotify-profile.herokuapp.com/',
+        'Stock market screener and strategy testing for entire indian stock market, backtested for over 8 years using momentuma and volumne based indicators and resulting a CAGR of 22.4%',
+      tech: ['Python', 'Pandas', 'TA-Lib', 'Quantstats'],
+      github: 'https://github.com/vivektripathi07/Stock_Market_Screener',
+      youtube: '',
+      external: '',
       image:
-        'https://images.unsplash.com/photo-1611339555312-e607c8352fd7?w=600&h=400&fit=crop',
-    },
-    {
-      title: 'Halcyon Theme',
-      description:
-        'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
-      tech: ['VS Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
-      github: 'https://github.com',
-      youtube: 'https://youtube.com',
-      external: 'https://halcyon-theme.netlify.com/',
-      image:
-        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop',
-    },
-    {
-      title: 'OctoProfile',
-      description:
-        'A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and recent activity.',
-      tech: ['Next.js', 'Chart.js', 'GitHub API', 'Vercel'],
-      github: 'https://github.com',
-      youtube: 'https://youtube.com',
-      external: 'https://octoprofile.vercel.app',
-      image:
-        'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop',
+        'https://scanz.com/wp-content/uploads/2020/04/Technical-Screeners-Moving-Averages-980x470.jpg.webp',
     },
   ];
+
+/*
 
   const otherProjects = [
     {
@@ -102,6 +82,8 @@ const Projects = () => {
       external: 'https://apple-music-player.netlify.com',
     },
   ];
+
+*/
 
   return (
     <section id="work" className="py-24 px-6">
@@ -170,11 +152,11 @@ const Projects = () => {
         </div>
 
         {/* Other Projects Header */}
-        <div className="flex items-center justify-between mb-6">
+        {/* <div className="flex items-center justify-between mb-6">
           <h3 className="text-2xl font-semibold text-portfolio-lightest-slate">
             Other Noteworthy Projects
           </h3>
-        </div>
+        </div> */}
 
         {/* Horizontally Scrollable Cards with Buttons Overlayed */}
         <div
@@ -205,7 +187,7 @@ const Projects = () => {
             ref={scrollRef}
             className="flex space-x-6 overflow-x-auto scroll-smooth pb-4 no-scrollbar"
           >
-            {otherProjects.map((project, index) => (
+            {/* {otherProjects.map((project, index) => (
               <div
                 key={index}
                 className="min-w-[300px] max-w-[300px] bg-portfolio-dark-light p-6 rounded shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex-shrink-0"
@@ -254,15 +236,15 @@ const Projects = () => {
                   ))}
                 </ul>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <a href="https://github.com" className="btn-outline">
             Show More
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
