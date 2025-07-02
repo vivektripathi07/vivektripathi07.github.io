@@ -72,7 +72,7 @@ const Navigation = () => {
             ))}
           </ol>
           <a
-            href="/resume.pdf"
+            href="src\components\assets\resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline ml-4"
