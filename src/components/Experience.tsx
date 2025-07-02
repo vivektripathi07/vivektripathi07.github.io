@@ -8,7 +8,7 @@ const Experience = () => {
     {
       company: 'Insight Fusion Analytics',
       title: 'Data Science Intern',
-      duration: 'Feb 2025 - Present',
+      duration: 'Feb 2025 - July 2025',
       description: [
         'Worked directly with client and have completed more than 10 real-world client projects.',
         'Created a full-fledged Employee Management System for the company using Google App Script and Excel formulas.',

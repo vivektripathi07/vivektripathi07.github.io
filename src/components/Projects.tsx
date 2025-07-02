@@ -27,6 +27,17 @@ const Projects = () => {
       image:
         'https://scanz.com/wp-content/uploads/2020/04/Technical-Screeners-Moving-Averages-980x470.jpg.webp',
     },
+    {
+      title: 'Multiple User Group Chat Desktop Application',
+      description:
+        'Room based Group chat Desktop application using Java and Java Swing',
+      tech: ['Java', 'Java Swing', 'Docker'],
+      github: 'https://github.com/vivektripathi07/chat_application_java',
+      youtube: '',
+      external: '',
+      image:
+        'https://t3.ftcdn.net/jpg/04/40/55/08/360_F_440550842_axpix9gdXQlEM1MvoPFMt7dctHsF2OAd.jpg',
+    }
   ];
 
 /*
