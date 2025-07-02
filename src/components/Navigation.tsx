@@ -73,8 +73,9 @@ const Navigation = () => {
           </ol>
           <a
             href="src\components\assets\resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            download
+            // target="_blank"
+            // rel="noopener noreferrer"
             className="btn-outline ml-4"
           >
             Resume
