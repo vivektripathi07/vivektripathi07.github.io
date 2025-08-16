@@ -16,7 +16,15 @@ const Experience = () => {
       ],
       skills: ['Python', 'Streamlit', 'Pandas', 'App Script', 'Backtesting']
     },
-    // Add more jobs as needed with description and skills
+    {
+      company: 'Cohyve',
+      title: 'Artificial Intelligence Intern',
+      duration: 'August 2025 - Present',
+      description: [
+        'Assisting AI team with building a generative AI feature for AI/CD'
+      ],
+      skills:['Python', 'Flask', 'FastAPI', 'Git/Github']
+      }
   ];
 
   useEffect(() => {
