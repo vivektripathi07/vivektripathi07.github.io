@@ -54,7 +54,7 @@ const About = () => {
             <div className="relative group">
               <div className="relative overflow-hidden rounded bg-portfolio-green">
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQEZiQj9Ry-k9g/profile-displayphoto-shrink_400_400/B56ZSFDgLGHQAg-/0/1737399080055?e=1755129600&v=beta&t=d7nUsdnuoLXzHV4nMNiwz9Ps3wYxAqSJrULU5em8nnE"
+                  src="src\components\assets\profile_pic.jpg"
                   alt="Profile"
                 />
               </div>
