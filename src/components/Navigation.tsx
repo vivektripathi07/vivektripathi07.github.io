@@ -9,11 +9,11 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
+      const isScrolled = window.scrollY > 8;
       setScrolled(isScrolled);
 
       // Determine active section
-      const sections = ['about', 'experience', 'work', 'contact'];
+      const sections = ['about', 'experience', 'work', 'research', 'certifications', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -36,7 +36,9 @@ const Navigation = () => {
     { name: 'About', href: '#about', id: 'about' },
     { name: 'Experience', href: '#experience', id: 'experience' },
     { name: 'Work', href: '#work', id: 'work' },
-    { name: 'Contact', href: '#contact', id: 'contact' },
+    {name: 'Research', href: '#research', id: 'research'},
+    { name: 'Certifications', href: '#certifications', id: 'certifications' },
+    { name: 'Contact', href: '#contact', id: 'contact' }
   ];
 
   return (

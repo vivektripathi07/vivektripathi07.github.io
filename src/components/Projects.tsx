@@ -40,61 +40,21 @@ const Projects = () => {
     }
   ];
 
-/*
+
 
   const otherProjects = [
     {
-      title: 'Integrating Algolia Search with WordPress Multisite',
+      title: 'Word Counter Command Line Tool',
       description:
-        'Building a custom multisite compatible WordPress plugin to build global search with Algolia',
-      tech: ['Algolia', 'WordPress', 'PHP'],
-      github: 'https://github.com',
-      youtube: 'https://youtube.com',
-      external: 'https://github.com',
-    },
-    {
-      title: 'Google Keep Clone',
-      description: 'A simple Google Keep clone built with React and Firebase',
-      tech: ['React', 'Firebase', 'Styled Components'],
-      github: 'https://github.com',
-      youtube: 'https://youtube.com',
-      external: 'https://google-keep-clone.netlify.com',
-    },
-    {
-      title: 'Apple Music Player',
-      description: 'A minimal Apple Music player built with React and Apple MusicKit JS',
-      tech: ['React', 'Apple MusicKit JS', 'Styled Components'],
-      github: 'https://github.com',
-      youtube: 'https://youtube.com',
-      external: 'https://apple-music-player.netlify.com',
-    },
-        {
-      title: 'Apple Music Player',
-      description: 'A minimal Apple Music player built with React and Apple MusicKit JS',
-      tech: ['React', 'Apple MusicKit JS', 'Styled Components'],
-      github: 'https://github.com',
-      youtube: 'https://youtube.com',
-      external: 'https://apple-music-player.netlify.com',
-    },
-        {
-      title: 'Apple Music Player',
-      description: 'A minimal Apple Music player built with React and Apple MusicKit JS',
-      tech: ['React', 'Apple MusicKit JS', 'Styled Components'],
-      github: 'https://github.com',
-      youtube: 'https://youtube.com',
-      external: 'https://apple-music-player.netlify.com',
-    },
-        {
-      title: 'Apple Music Player',
-      description: 'A minimal Apple Music player built with React and Apple MusicKit JS',
-      tech: ['React', 'Apple MusicKit JS', 'Styled Components'],
-      github: 'https://github.com',
-      youtube: 'https://youtube.com',
-      external: 'https://apple-music-player.netlify.com',
+        'Built a basic word counter tool using java and integrated it with command prompt.',
+      tech: ['Java'],
+      github: 'https://github.com/vivektripathi07/Learning-java/tree/main/WC_tool',
+      youtube: undefined,
+      external: undefined,
     },
   ];
 
-*/
+
 
   return (
     <section id="work" className="py-24 px-6">
@@ -163,11 +123,11 @@ const Projects = () => {
         </div>
 
         {/* Other Projects Header */}
-        {/* <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-6">
           <h3 className="text-2xl font-semibold text-portfolio-lightest-slate">
             Other Noteworthy Projects
           </h3>
-        </div> */}
+        </div>
 
         {/* Horizontally Scrollable Cards with Buttons Overlayed */}
         <div
@@ -198,7 +158,7 @@ const Projects = () => {
             ref={scrollRef}
             className="flex space-x-6 overflow-x-auto scroll-smooth pb-4 no-scrollbar"
           >
-            {/* {otherProjects.map((project, index) => (
+            {otherProjects.map((project, index) => (
               <div
                 key={index}
                 className="min-w-[300px] max-w-[300px] bg-portfolio-dark-light p-6 rounded shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex-shrink-0"
@@ -247,7 +207,7 @@ const Projects = () => {
                   ))}
                 </ul>
               </div>
-            ))} */}
+            ))}
           </div>
         </div>
 

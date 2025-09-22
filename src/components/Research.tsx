@@ -2,21 +2,21 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const researchProjects = [
   {
-    title: 'Explainable AI for Credit Risk Modeling',
+    title: 'Land Cover Mapping of Coastline for Threat Detection',
     description:
-      'Used SHAP values to interpret predictions of credit default models. Developed dashboards for visualizing model explainability.',
-    tech: ['XGBoost', 'SHAP', 'Dash', 'Pandas'],
-    github: 'https://github.com',
-    external: 'https://example.com',
+      'Used U-NET with optimized weight functions for satellite image segmentation and then find out trends of shoreline shrinkage.',
+    tech: ['U-Net', 'Pandas', 'Plotly', 'ArchGIS'],
+    github: undefined,
+    external: 'src\\components\\assets\\shoreline_paper.pdf',
   },
   {
-    title: 'Stock Market Regime Detection with HMMs',
+    title: 'Vegetation Quality Monitoring using LSTM (Ongoing)',
     description:
-      'Modeled financial market regimes using Hidden Markov Models, identifying transitions for trading strategy adjustments.',
-    tech: ['Python', 'HMM', 'Quantlib', 'Plotly'],
-    github: 'https://github.com',
-    external: 'https://example.com',
-  },
+      'Used Vegetation Indices from satellite images, converted into time-series vectors, and applied LSTM to model vegetation dynamics and predict trends. ',
+    tech: ['VI(s)', 'Vectorization', 'LSTM', 'ArchGIS'],
+    github: undefined,
+    external: undefined,
+  }
 ];
 
 const Research = () => {
@@ -49,12 +49,21 @@ const Research = () => {
 
               <div className="flex gap-4">
                 {project.github && (
-                  <a href={project.github} className="text-portfolio-slate hover:text-portfolio-green transition-colors">
+                  <a 
+                    href={project.github} 
+                    className="text-portfolio-slate hover:text-portfolio-green transition-colors"
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     <Github size={18} />
                   </a>
                 )}
                 {project.external && (
-                  <a href={project.external} className="text-portfolio-slate hover:text-portfolio-green transition-colors">
+                  <a 
+                    href={project.external} 
+                    download
+                    className="text-portfolio-slate hover:text-portfolio-green transition-colors"
+                    >
                     <ExternalLink size={18} />
                   </a>
                 )}

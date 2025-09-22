@@ -7,6 +7,7 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import SocialLinks from '../components/SocialLinks';
 import Research from '@/components/Research';
+import Certifications from '@/components/Certification';
 
 const Index = () => {
   return (
@@ -19,7 +20,8 @@ const Index = () => {
         <About />
         <Experience />
         <Projects />
-        {/* <Research/> */}
+        <Research/>
+        <Certifications/>
         <Contact />
       </main>
       

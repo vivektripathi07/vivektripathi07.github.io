@@ -6,7 +6,20 @@ const Experience = () => {
 
   const jobs = [
     {
+      company: 'Cohyve',
+      companyUrl: 'https://www.cohyve.io/',
+      title: 'Artificial Intelligence Intern',
+      duration: 'August 2025 - Present',
+      description: [
+        'Assisting AI team with building a generative AI feature for AI/CD',
+        'Researched about working of diffusion models for image generation.',
+        'Implemented a moodboard generator feature in the website.'
+      ],
+      skills:['Python', 'ML', 'React', 'Flask', 'FastAPI', 'Git/Github']
+    },
+    {
       company: 'Insight Fusion Analytics',
+      companyUrl: 'https://insightfusionanalytics.com/',
       title: 'Data Science Intern',
       duration: 'Feb 2025 - July 2025',
       description: [
@@ -15,16 +28,7 @@ const Experience = () => {
         'Learned about Algo-trading and did few backtesting and screnning projects.',
       ],
       skills: ['Python', 'Streamlit', 'Pandas', 'App Script', 'Backtesting']
-    },
-    {
-      company: 'Cohyve',
-      title: 'Artificial Intelligence Intern',
-      duration: 'August 2025 - Present',
-      description: [
-        'Assisting AI team with building a generative AI feature for AI/CD'
-      ],
-      skills:['Python', 'Flask', 'FastAPI', 'Git/Github']
-      }
+    }
   ];
 
   useEffect(() => {
@@ -64,15 +68,17 @@ const Experience = () => {
               ref={(el) => (jobRefs.current[index] = el)}
               className="border-l-2 border-portfolio-dark-lighter pl-8 relative"
             >
-              <div
-                className={`absolute w-4 h-4 rounded-full -left-2 top-2 transition-colors duration-300 ${
-                  activeJob === index ? 'bg-portfolio-green' : 'bg-portfolio-dark-lighter'
-                }`}
-              ></div>
 
               <h3 className="text-xl font-medium text-portfolio-lightest-slate mb-2">
                 {job.title}{' '}
-                <span className="text-portfolio-green">@ {job.company}</span>
+                <a
+                  href={job.companyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-portfolio-green hover:underline"
+                >
+                  @ {job.company}
+                </a>
               </h3>
 
               <p className="font-mono text-sm text-portfolio-slate mb-4">{job.duration}</p>
