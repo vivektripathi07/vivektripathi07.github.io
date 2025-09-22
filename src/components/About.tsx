@@ -1,3 +1,4 @@
+import profile from './assets/profile_pic.jpg';
 
 const About = () => {
   const skills = [
@@ -54,7 +55,7 @@ const About = () => {
             <div className="relative group">
               <div className="relative overflow-hidden rounded bg-portfolio-green">
                 <img
-                  src="src\components\assets\profile_pic.jpg"
+                  src="https://media.licdn.com/dms/image/v2/D5603AQEZiQj9Ry-k9g/profile-displayphoto-shrink_400_400/B56ZSFDgLGHQAg-/0/1737399080055?e=1761177600&v=beta&t=Wis1_PCSUHW-dV3PNnxGdmLqNqCarp8KV9tAWn43pTY"
                   alt="Profile"
                 />
               </div>
