@@ -25,7 +25,7 @@ const Projects = () => {
       youtube: '',
       external: 'https://sql-query-frontend-br5n.vercel.app/',
       image:
-        'src\\components\\assets\\sql_proj_thumbnail.png',
+        'https://i.ibb.co/9m2CnZ8q/Screenshot-2025-09-29-152005.png',
     },
     {
       title: 'Stock Market Screener and Backtester',
