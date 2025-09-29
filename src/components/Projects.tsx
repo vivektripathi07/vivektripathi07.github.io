@@ -17,6 +17,17 @@ const Projects = () => {
 
   const featuredProjects = [
     {
+      title: 'SQL queries from Text',
+      description:
+        'This tool has context to an online database which generates SQL quries for that database upon asking questions.',
+      tech: ['FastAPI', 'React+Vite', 'Github', 'Render/Vercel', 'GenAI'],
+      github: 'https://github.com/vivektripathi07/sql-query-frontend',
+      youtube: '',
+      external: 'https://sql-query-frontend-br5n.vercel.app/',
+      image:
+        'src\\components\\assets\\sql_proj_thumbnail.png',
+    },
+    {
       title: 'Stock Market Screener and Backtester',
       description:
         'Stock market screener and strategy testing for entire indian stock market, backtested for over 8 years using momentuma and volumne based indicators and resulting a CAGR of 22.4%',
