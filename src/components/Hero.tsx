@@ -18,9 +18,15 @@ const Hero = () => {
           </p>
           <a 
             href="#work" 
-            className="btn-outline inline-block"
+            className="btn-outline inline-block mr-4"
           >
             Check out my work!
+          </a>
+          <a 
+            href="https://vivektalks.space/" 
+            className="btn-outline inline-block"
+          >
+            Check out my blog!
           </a>
         </div>
       </div>
