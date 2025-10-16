@@ -17,6 +17,16 @@ const Projects = () => {
 
   const featuredProjects = [
     {
+      title: 'Job Listing and Resume Screener',
+      description: "Platform that allows admin to post jobs and user can upload resume, all the resumes would be ATS ranked and would be available for shortlisting on admin's dashboard",
+      tech: ['FastAPI', 'TyepeScript', 'React+Vite', 'Github', 'Vercel'],
+      github: 'https://github.com/vivektripathi07/Resume-Screener-frontend',
+      youtube: 'https://youtu.be/vD5ypPAksuo',
+      external: 'https://resume-screener-frontend-beryl.vercel.app/',
+      image:
+        'https://i.ibb.co/84S608qR/Screenshot-2025-10-16-102735.png',
+    },
+    {
       title: 'SQL queries from Text',
       description:
         'This tool has context to an online database which generates SQL quries for that database upon asking questions.',
